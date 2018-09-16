@@ -1,0 +1,106 @@
+body{
+background-image:url(levels1.jpg);
+background-size:100% ,100%;
+}
+.button{
+	
+	height:90px;
+	width:300px;
+	font:35px Helvetica,Arial;
+ 	border-radius:10px;
+	padding:20px;
+	padding-right:50px;
+	color:#FFFFFF;
+	text-align:right;
+   	cursor:pointer;
+	transition: all 0.1s; 
+	position:absolute;
+	top:30px;
+	left:-50px;
+	transform: translate(-50%,-50%);
+	overflow:hidden;
+	transform: skew(30deg);
+	box-shadow: 0 9px #505050;
+	
+}
+.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button:before{
+	 content:"";
+}
+.button:hover {
+	left:50px;
+	
+}
+
+.button1{
+	position:absolute;
+	background-color:rgb(0,0,0,0.3);
+	top:50px;
+	
+	
+}
+.button1:hover:before{
+	left:-30px;
+}
+.button1:hover:after {
+	
+	
+	left:(100%+60px);
+}
+.button1:target div{
+	visibility:visible;
+}
+.button2{
+	position:absolute;
+	background-color:rgb(0,0,0,0.3);
+	top:170px;
+}
+.button2:hover:after {
+	
+	left:(100%+30px);
+		
+}
+.button3{
+	position:absolute;
+	background-color:rgb(0,0,0,0.3);
+	top:290px;
+}
+.button3:hover:after {
+	
+	left:(100%+30px);
+		
+}
+.button4{
+	position:absolute;
+	background-color:rgb(0,0,0,0.3);
+	top:410px;
+}
+.button4:hover:after {
+	
+	left:(100%+30px);
+		
+}
+.content {
+	width:400px;
+	height:200px;
+	text-align:center;
+    color:white;
+	font-size:25px;
+	padding: 0 18px;
+	position:absolute;
+	transform: translate(10%,80%);
+	left:400px;
+	top=200px;
+	maxheight:0;
+	visibility:hidden;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out;
+    background-color:rgb(0,0,0,0.3);
+	position:absolute;
+
+	
+}

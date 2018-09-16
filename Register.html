@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Defenders Of Space</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            
+            .aa{
+                display: block;
+                background-color: rgba(0,0,0,0.3);
+                width:50%;
+                height:auto;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: center;
+                border-radius: 20px;
+               box-shadow: 10px 10px 50px #740DA4;
+            }
+            .form
+            {
+              
+               width:500px;
+               height:auto;
+               margin-top: 20px;
+               border-radius: 10px;
+               box-shadow: 2px lemonchiffon left;
+               padding-left: 100px;
+               padding-right: 100px;
+               color: white;
+               display:block;
+                margin-left: auto;
+                margin-right: auto;
+                width:50%;
+              
+            }
+            .form input[type="text"]
+            {
+                align-items: center;
+                border-radius: 5px;
+                margin-top: 10px;
+                 width: 300px;
+                 height:30px;
+                background-image:url('person.png');
+                background-repeat: no-repeat;
+                background-size: 30px 30px;
+                padding-left: 40px;
+            }          
+            .form input[type="email"]
+            {
+                padding-left: 40px;
+                border-radius:5px;
+                margin-top: 10px;
+                height:30px;
+                width:300px;
+            }
+            .form input[type="submit"]
+            {
+                border-radius: 5px;
+                margin-top: 10px;
+                font-weight: bolder;
+                width:350px;
+                height:30px;
+                font-weight: bolder;
+                font-size: 15px;
+            }
+            .form input[type="radio"]
+            {
+                background-image:url('name.jpg');
+                background-repeat: no-repeat;
+                padding-left: 40px;
+                border-radius: 5px;
+                margin-top: 5px;
+                 height:20px;
+            }
+            .form input[type="password"]
+            {
+          
+                padding-left: 40px;
+                border-radius: 5px;
+                margin-top: 10px;
+                height:30px;
+                width:300px;
+            }
+            .lgn input[type="submit"]
+            {
+                 border-radius: 5px;
+                margin-top: 10px;
+                width:350px;
+                font-weight: bolder;
+                font-size: 15px;
+                height:30px;
+                 margin-left: 170px;
+                 margin-bottom: 30px;
+                
+            }
+            	#myvideo{
+                            position: fixed;
+                            right: 0;
+                            bottom: 0;
+                            top: 0;
+                            left: 0;
+			min-width:100%;
+			min-height:100%;
+                        z-index: -999;
+			}
+            </style>
+    </head>
+    <body>
+       <video  autoplay loop muted id="myvideo">
+            <source src="register.mp4" type="video/mp4">
+             browser old
+        </video>
+	
+
+        <div class="aa">
+                     <h1 style="text-align: center;color:#D1E73E;text-shadow:0px 0px 30px #FF0000,2px 2px 5px #0000FF ;font-size: 50px">Registration Form</h1>
+
+                       <form action="inn.jsp" method="post" class="form">
+                <br>
+               
+                    <input type="text" name="name1" class="name1"  placeholder="Player1 Name" required >
+                 <input type="text" name="name2" class="name2" placeholder="Player2 Name" required >
+            
+                 <input type="text" placeholder="Team Name" name="tname" required style="background-image: url('team.png');background-repeat: no-repeat;background-size: 30px 30px"><br>
+                 
+               <input type="text" name="course" placeholder="Course" required  style="background-image: url('course.png');background-repeat: no-repeat;background-size: 30px 30px"/>
+              <input type="text"  name="branch" placeholder="Branch" required style="background-image: url('branch.png');background-repeat: no-repeat;background-size: 30px 30px"/>
+ 
+                <br> <h3> Year:</h3>
+            <input type="radio" name="year" value="1st">1st
+            <input type="radio" name="year" value="2nd" style="margin-left:80px">2nd<br>
+            <input type="radio" name="year" value="3rd">3rd
+            <input type="radio" name="year" value="4th" style="margin-left:80px">4th<br>
+          <input type="text" name="College" placeholder="Enter Your College Name" required style="background-image: url('clg.jpg');background-repeat: no-repeat;background-size: 30px 30px"><br>
+            <input type="text" name="Contact" placeholder="Contact No." required minlength="10" pattern="[0-9]{10}" style="background-image: url('phn.jpg');background-repeat: no-repeat;background-size: 30px 30px"><br>
+            <input type="email" name="email" placeholder="Email" required style="background-image: url('email.png');background-repeat: no-repeat;background-size: 30px 30px"><br>
+            <input type="password" name="pas" minlength="8" placeholder="Password" required  style="background-image: url('pass.png');background-repeat: no-repeat;background-size: 30px 30px"/>
+            <br> <input type="submit" name="Submit" value="Register" style="background-color:#740DA4;height:40px;color:white">
+              </form>
+                     <div class="lgn">
+            <a href="loginPage.html"> <input type="submit" value="Login" name="Login" style="background-color:#740DA4;height:40px;color:white; margin-left:190px;"></a>
+                     </div>
+        </div>
+        
+    </body>
+</html>

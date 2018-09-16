@@ -1,0 +1,85 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="csslevels.css">
+
+
+<script language="javascript">
+
+function mouseover(id)
+{	if(id=="level1")
+	{ content1.style.visibility="visible";
+	}
+	else if(id=="level2")
+	{ content2.style.visibility="visible";
+	}
+	else if(id=="level3")
+	{ content3.style.visibility="visible";
+	}
+	else if(id=="level4")
+	{ content4.style.visibility="visible";
+	}
+}
+function mouseout(id)
+{	if(id=="level1")
+	{ content1.style.visibility="hidden";
+	}
+	else if(id=="level2")
+	{ content2.style.visibility="hidden";
+	}
+	else if(id=="level3")
+	{ content3.style.visibility="hidden";
+	}
+	else if(id=="level4")
+	{ content4.style.visibility="hidden";
+	}
+}
+
+
+</script>
+
+</head>
+<body>
+<!-- <img src="comet.gif" style="width:200; height:200;"></img> -->
+
+<a href =level1.html ><button class="button button1" onmouseover="mouseover(this.value)" onmouseout="mouseout(this.value)" name="level1" value="level1"> Level 1  
+ </button></a><br><br><br>
+<div class="content" id="content1" >Details of level 1 are:
+ <br> 1.Solve this fragment by answering the one word solution
+ <br> 2. rule no 2
+ 
+ </div>
+
+
+
+
+ <a href =level2.html ><button class="button button2" onmouseover="mouseover(this.value)" onmouseout="mouseout(this.value)" name="level2" value="level2">Level 2
+</button></a><br><br><br>
+<div class="content" id="content2" >Details of level 2 are:
+ <br> Get that code to activate the weapons <br> </div>
+
+
+
+
+
+
+<a href =level3.html ><button class="button button3" onmouseover="mouseover(this.value)" onmouseout="mouseout(this.value)" name="level3" value="level3">Level 3
+</button></a><br><br><br>
+<div class="content" id="content3" >Details of level 3 are:
+ <br> Can you decrypt this one? <br> </div>
+
+
+
+
+
+<a href =level4.html ><button class="button button4" onmouseover="mouseover(this.value)" onmouseout="mouseout(this.value)" name="level4" value="level4">Level 4
+</button></a><br><br><br>
+<div class="content" id="content4" >Details of level 4 are:
+ <br> Can you decrypt this one?
+
+ </div>
+
+
+
+
+</body>
+</html>

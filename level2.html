@@ -1,0 +1,178 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Level 2</title>
+<style>
+
+.team {
+	position:absolute;
+	margin-top:10px;
+	margin-left:20px;
+	width:500px;
+	height:40px;
+	
+	
+}
+.score {
+	position:absolute;
+	margin-top:30px;
+	margin-left:1300px;
+	width:200px;
+	height:40px;
+	
+	
+}
+.container {
+    border-radius: 5px;
+   	position:absolute;
+	height:960px;
+	width:1100px;
+	margin-top:120px;
+	margin-left:250px;
+	color:white;
+}
+* {
+    box-sizing: border-box;
+}
+.col-70 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+	
+}
+input[type=text], select, textarea {
+    width: 1040px;
+	height:400px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+	margin-left:28px;
+	margin-top:10px;
+	color:black;
+}
+input[type=submit] {
+    background-color: rgb(0,0,0,0.7);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   margin-top:50px;
+	margin-bottom:100px;
+	
+	width:140px;
+	
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+</head>
+<body>
+<img src="space.jpg" style="height:1200px;width:1519px;position:absolute;">
+<div class="team" >
+	<h3 style="color:white">Welcome TeamName!</h3>	
+</div>
+
+<div class="score">
+	<h4 style="color:white">Your score is:</h4>
+</div>
+
+
+<div class="container" style="background-color:rgb(0,0,0,0.5);">
+
+	<div class="row">
+      <div class="col-100">
+        <h3 style="margin-left:30px">Question 2: Pair the minimum</h3>
+      </div>
+	</div>
+
+	
+	<div class="row">
+		<div class="col-100">
+			<p style="margin-left:30px ; margin-right:30px; margin-top:20px; font-family:Verdana">Akshay loves to play with numbers and arrays. He took an array of size " 2n "
+			where n is any positive integer chose by him. He tries to divide the array into n pairs, such that the pair sum minimizes the maximum sum of a pair.
+			For example, say we have an array with the given numbers (9, 6, 1, and 5). The possible pairs are ( 1 , 6 ) , ( 5 , 9 ) or ( 1 , 5 ),( 6 , 9 ) or 
+			( 1 , 9 ) , ( 5 , 6 ). The pair sums for these partitions are ( 7 , 14 ) and ( 6 , 15 ) and ( 10 , 11 )  respectively .  The ideal or the selected pairs are (1, 9), 
+			(5, 6 )  because out of all the three cases or possibilities we only have (1, 9), (5, 6 )  where the sum of both pairs is minimum of all the maximum sum of all 
+			three possibilities.</p> 
+			
+			
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-100">
+			<p style="margin-left:30px ; margin-right:30px; margin-top:20px; font-family:Verdana">Input: 
+				The first Line contains an integer T denoting the number of test cases.The first line of each test case contains integer n.
+				The second line contains the array of size  2 * n, consisting of positive integers only.</p> 
+			
+			
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-100">
+			<p style="margin-left:30px ; margin-right:30px; margin-top:20px ;font-family:Verdana">Output:
+				For each test case, the output is the list of ideal pairs in the form (a,b)(c,d) and so on in newline.</p> 
+			
+			
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-100">
+			<p style="margin-left:30px ; margin-right:30px; margin-top:20px">
+				Constraints:<br>
+				1<=T<=150<br>
+				1<=N<=150<br>
+				1 <= A[ 2*N ] <= 10^5</p> 
+			
+			
+		</div>
+	</div>
+	<div class="row">
+      <div class="col-70">
+        <input type="text" id="fname" name="editor">
+      </div>
+	</div>
+	
+	<div class="row">
+		<input type="submit" value="Compile and Test" style="margin-left:760px">
+		<input type="submit" value="Submit" style="margin-left:20px;">
+		
+		
+	  
+    </div>
+</div>
+<button type="button" style="position:absolute; margin-left:1140px; margin-top:1100px; height:60px;width:170px; background-color:rgb(0,0,0,0.7)"><a href="levels.html">Go back to Levels</a></button>
+</body>
+
+
+</html>
